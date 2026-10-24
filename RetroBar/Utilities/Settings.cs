@@ -1,4 +1,4 @@
-using ManagedShell.AppBar;
+﻿using ManagedShell.AppBar;
 using ManagedShell.Common.Helpers;
 using ManagedShell.WindowsTray;
 using System;
@@ -86,7 +86,8 @@ namespace RetroBar.Utilities
             set => Set(ref _language, value);
         }
 
-        private string _theme = "Windows 95-98";
+        // AERO: default to the AERO 7 theme (changed from "Windows 95-98").
+        private string _theme = "AERO 7";
         public string Theme
         {
             get => _theme;
@@ -426,7 +427,8 @@ namespace RetroBar.Utilities
             set => SetEnum(ref _clockClickAction, value);
         }
 
-        private bool _checkForUpdates = true;
+        // AERO: off by default (AERO makes no background network calls).
+        private bool _checkForUpdates = false;
         public bool CheckForUpdates
         {
             get => _checkForUpdates;

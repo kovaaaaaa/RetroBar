@@ -9,7 +9,11 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <AssemblyVersion>1.0.0.8</AssemblyVersion>
     <FileVersion>1.0.0.8</FileVersion>
-    <ApplicationIcon>Resources\retrobar.ico</ApplicationIcon>
+    <!-- AERO: product name, exe name and icon. -->
+    <Product>AERO Taskbar</Product>
+    <AssemblyTitle>AERO Taskbar</AssemblyTitle>
+    <AssemblyName>AeroTaskbar</AssemblyName>
+    <ApplicationIcon>Resources\aero.ico</ApplicationIcon>
     <Platforms>AnyCPU;x86;ARM64</Platforms>
     <LangVersion>12</LangVersion>
   </PropertyGroup>
@@ -38,6 +42,7 @@
 	<None Remove="Resources\desktop95-lg.png" />
 	<None Remove="Resources\help.png" />
     <None Remove="Resources\retrobar.ico" />
+    <None Remove="Resources\aero.ico" />
     <None Remove="Resources\shader_invert.ps" />
     <None Remove="Resources\start9x.png" />
     <None Remove="Languages\English.xaml" />
@@ -55,6 +60,9 @@
 	<Resource Include="Resources\help.png" />
     <Resource Include="Resources\shader_invert.ps" />
     <Resource Include="Resources\retrobar.ico">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\aero.ico">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\start9x.png" />

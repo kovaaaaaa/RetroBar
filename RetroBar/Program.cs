@@ -5,7 +5,8 @@ namespace RetroBar
 {
     internal sealed class Program
     {
-        private const string MutexName = "RetroBar";
+        // AERO: renamed from "RetroBar".
+        private const string MutexName = "AERO Taskbar";
         private const int MutexAttempts = 10;
         private const int MutexWaitMs = 1000;
 

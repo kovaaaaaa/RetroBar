@@ -1,8 +1,9 @@
-﻿#define RetroBarName "RetroBar"
+﻿; AERO: product name, exe name and icon.
+#define RetroBarName "AERO Taskbar"
 #define RetroBarPublisher "Sam Johnson"
 #define RetroBarURL "https://github.com/dremin/RetroBar"
 #define RetroBarReleasesURL RetroBarURL + "/releases"
-#define RetroBarExeName "RetroBar.exe"
+#define RetroBarExeName "AeroTaskbar.exe"
 
 #define DotNet6VersionDownload "6.0.36"
 #define DotNet6VersionMinimum "6.0.2"
@@ -46,7 +47,7 @@ AppUpdatesURL={#RetroBarURL}
 DefaultDirName={autopf}\{#RetroBarName}
 UninstallDisplayIcon={app}\{#RetroBarExeName}
 SetupMutex={#RetroBarName}Installer
-SetupIconFile=RetroBar\Resources\retrobar.ico
+SetupIconFile=RetroBar\Resources\aero.ico
 ArchitecturesInstallIn64BitMode=x64compatible or arm64
 DisableProgramGroupPage=yes
 PrivilegesRequired=lowest

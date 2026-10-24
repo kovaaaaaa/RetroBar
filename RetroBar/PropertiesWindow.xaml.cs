@@ -151,7 +151,7 @@ namespace RetroBar
 
                 if (rKeyValueNames != null)
                 {
-                    if (rKeyValueNames.Contains("RetroBar"))
+                    if (rKeyValueNames.Contains("AERO Taskbar"))
                     {
                         cbAutoStart.IsChecked = true;
                     }
@@ -353,12 +353,12 @@ namespace RetroBar
 
                 if (chkBox.IsChecked.Equals(false))
                 {
-                    rKey?.DeleteValue("RetroBar");
+                    rKey?.DeleteValue("AERO Taskbar");
                 }
                 else
                 {
                     // Registry Run values are command lines; quote the executable path to handle spaces in usernames/paths.
-                    rKey?.SetValue("RetroBar", $"\"{ExePath.GetExecutablePath()}\"");
+                    rKey?.SetValue("AERO Taskbar", $"\"{ExePath.GetExecutablePath()}\"");
                 }
             }
             catch (Exception exception)
