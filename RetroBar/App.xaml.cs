@@ -159,7 +159,7 @@ namespace RetroBar
             if (e.Exception.InnerException != null)
                 inner = "\r\n\r\nInner exception:\r\nMessage: " + e.Exception.InnerException.Message + "\r\nTarget Site: " + e.Exception.InnerException.TargetSite + "\r\n\r\n" + e.Exception.InnerException.StackTrace;
 
-            string msg = "Would you like to restart RetroBar?\r\n\r\nPlease submit a bug report with a screenshot of this error. Thanks! \r\nMessage: " + e.Exception.Message + "\r\nTarget Site: " + e.Exception.TargetSite + "\r\nVersion: " + version + "\r\n\r\n" + e.Exception.StackTrace + inner;
+            string msg = "Would you like to restart the AERO taskbar?\r\n\r\nPlease submit a bug report with a screenshot of this error. Thanks! \r\nMessage: " + e.Exception.Message + "\r\nTarget Site: " + e.Exception.TargetSite + "\r\nVersion: " + version + "\r\n\r\n" + e.Exception.StackTrace + inner;
 
             ShellLogger.Error(msg, e.Exception);
 
@@ -180,15 +180,15 @@ namespace RetroBar
                     if (e.Exception.Message.StartsWith("UCEERR_RENDERTHREADFAILURE"))
                     {
                         RestartApp();
-                        Environment.FailFast("Automatically restarted RetroBar due to a render thread failure.");
+                        Environment.FailFast("Automatically restarted AERO Taskbar due to a render thread failure.");
                     }
                     else
                     {
-                        if (MessageBox.Show(dMsg, "RetroBar Error", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+                        if (MessageBox.Show(dMsg, "AERO Taskbar Error", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
                         {
                             // it's like getting a morning coffee.
                             RestartApp();
-                            Environment.FailFast("User restarted RetroBar due to an exception.");
+                            Environment.FailFast("User restarted AERO Taskbar due to an exception.");
                         }
                     }
 

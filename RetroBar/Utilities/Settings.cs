@@ -1,4 +1,4 @@
-using ManagedShell.AppBar;
+﻿using ManagedShell.AppBar;
 using ManagedShell.Common.Helpers;
 using ManagedShell.WindowsTray;
 using System;
@@ -427,7 +427,8 @@ namespace RetroBar.Utilities
             set => SetEnum(ref _clockClickAction, value);
         }
 
-        private bool _checkForUpdates = true;
+        // AERO: off by default (AERO makes no background network calls).
+        private bool _checkForUpdates = false;
         public bool CheckForUpdates
         {
             get => _checkForUpdates;

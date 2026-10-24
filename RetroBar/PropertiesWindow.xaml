@@ -5,7 +5,7 @@
         xmlns:converters="clr-namespace:RetroBar.Converters"
         xmlns:Settings="clr-namespace:RetroBar.Utilities"
         Title="{DynamicResource retrobar_properties}"
-        Icon="Resources/retrobar.ico"
+        Icon="Resources/aero.ico"
         Height="Auto"
         Width="Auto"
         MinWidth="413"
@@ -202,7 +202,7 @@
                                                 </ItemsControl.ItemsPanel>
                                                 <Button Style="{DynamicResource ToolbarButton}"
                                                         Focusable="False">
-                                                    <Image Source="Resources\retrobar.ico"
+                                                    <Image Source="Resources\aero.ico"
                                                            Style="{DynamicResource ToolbarIcon}" />
                                                 </Button>
                                             </ItemsControl>
@@ -222,7 +222,7 @@
                                                         <ColumnDefinition Width="Auto" />
                                                         <ColumnDefinition Width="*" />
                                                     </Grid.ColumnDefinitions>
-                                                    <Image Source="Resources\retrobar.ico"
+                                                    <Image Source="Resources\aero.ico"
                                                            Grid.Column="0"
                                                            Style="{DynamicResource TaskIcon}" />
                                                     <TextBlock Text="RetroBar"
@@ -374,7 +374,7 @@
                                                     </ItemsPanelTemplate>
                                                 </ItemsControl.ItemsPanel>
                                                 <Border>
-                                                    <Image Source="Resources\retrobar.ico"
+                                                    <Image Source="Resources\aero.ico"
                                                            Style="{DynamicResource NotifyIcon}" />
                                                 </Border>
                                             </ItemsControl>
