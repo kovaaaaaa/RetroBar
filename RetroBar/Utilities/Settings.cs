@@ -86,7 +86,8 @@ namespace RetroBar.Utilities
             set => Set(ref _language, value);
         }
 
-        private string _theme = "Windows 95-98";
+        // AERO: default to the AERO 7 theme (changed from "Windows 95-98").
+        private string _theme = "AERO 7";
         public string Theme
         {
             get => _theme;
